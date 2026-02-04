@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="absolute inset-0 bg-primary/75" />
 
         {/* Content on top */}
-        <div className="absolute inset-0 flex flex-row items-center z-10 px-24 xl:px-64">
+        <div className="absolute inset-0 flex flex-row items-center z-10  px-6 md:px-24 xl:px-64">
             <div className="flex flex-col gap-8 w-full">
                 <div className="flex">
                     <div className="flex flex-col">

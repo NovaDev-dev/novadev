@@ -21,11 +21,13 @@ export default function Services() {
       {/* Slider */}
       <div
         className="
-          services-scroll
-          flex gap-8
-          overflow-x-auto
-          snap-x snap-mandatory
-          pb-6
+            services-scroll
+            flex flex-col sm:flex-row gap-8
+            overflow-y-auto sm:overflow-x-auto
+            overflow-x-hidden sm:overflow-y-hidden
+            snap-y sm:snap-x snap-mandatory
+            pb-6
+            max-h-106 
         "
       >
         {services.map((service, idx) => (

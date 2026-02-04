@@ -21,16 +21,17 @@ export default function Service ({title, image}: ServiceProps) {
                 src={`/service/${image}.png`}
                 alt={title}
                 className="
-                    h-full object-cover
+                    object-cover
+                    h-auto
                     transition-transform duration-300 ease-out
                     group-hover:scale-105
                 "
                 />
             </div>
 
-            <div className="w-full p-6 pointer-events-none bg-primary">
-                <h3 className="text-xl lg:text-2xl font-display font-bold">
-                {title}
+            <div className="w-full p-4 pointer-events-none bg-primary flex-1 flex items-center justify-center">
+                <h3 className="md:text-xl lg:text-2xl font-display font-bold text-center">
+                    {title}
                 </h3>
             </div>
         </article>
