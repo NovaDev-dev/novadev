@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-sans)',
         display: 'var(--font-display)',
+        serif: ['"Times New Roman"', 'Times', 'serif'],
       },
       colors: {
         primary: 'var(--primary)',

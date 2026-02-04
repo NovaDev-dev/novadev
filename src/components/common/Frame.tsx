@@ -1,4 +1,4 @@
-export default function DeviceFrame({className = "", image, alt,}: { className:any ;image: string; alt: string;}) {
+export default function DeviceFrame({className = "", image, alt,}: { className?:any ;image: string; alt: string;}) {
   return (
     <div className={`relative rounded-2xl bg-[#0b0b0b] p-4 shadow-2xl ${className}`}>
       

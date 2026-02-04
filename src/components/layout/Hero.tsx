@@ -2,7 +2,7 @@ import { Button } from "../common/Button";
 
 export default function Hero() {
   return (
-    <section className="relative w-full flex items-center justify-center overflow-hidden text-white h-96 md:h-170">
+    <section id="home" className="relative w-full flex items-center justify-center overflow-hidden text-white h-96 md:h-170">
 
       {/* Background color */}
       <div className="absolute inset-0 z-0 bg-tertiary" />
@@ -18,7 +18,7 @@ export default function Hero() {
       />
 
       {/* Hero Text */}
-      <div className="relative z-20 flex flex-col items-center md:items-start text-center md:text-left px-6 md:px-24">
+      <div className="relative z-30 flex flex-col items-center md:items-start text-center md:text-left px-6 md:px-24">
         <h1 className="text-4xl md:text-6xl font-display font-bold">
           Software Solutions in YYC
         </h1>
@@ -26,13 +26,18 @@ export default function Hero() {
           We craft web and mobile applications that empower startups and local businesses to grow.
         </p>
 
-        <div className="mt-6 flex flex-row gap-4 justify-center md:justify-start">
-            <Button className="bg-primary">Get Started</Button>
-            <Button className="text-muted border">Our Work</Button>
+        <div className="my-6 flex flex-row gap-4 justify-center md:justify-start">
+            <a href="/contact">
+              <Button className="bg-primary">Get Started</Button>
+            </a>
+
+            <a href="#portfolio">
+              <Button className="text-muted border">Our Work</Button>
+            </a>
         </div>
 
         {/* Optional highlights */}
-        <div className="hidden md:flex flex-wrap gap-6 justify-center md:justify-start mt-8">
+        <div className="hidden md:flex flex-wrap gap-6 justify-center md:justify-start mb-12">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-primary rounded-full"></span>
             <span>Custom Web Apps</span>
@@ -47,6 +52,21 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <img
+          src="/beaver.gif"
+          alt="Decorative animation"
+          className="
+            hidden lg:block
+            z-20
+            absolute
+            bottom-0
+            right-100
+            opacity-90
+            w-64
+            pointer-events-none
+            select-none
+          "
+        />
     </section>
   );
 }

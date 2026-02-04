@@ -8,7 +8,8 @@
   --secondary: #1e3a8a;    
   --tertiary: #172554;      
   --light: #dee8fc;        
-  --muted: #bdd0f9;   
+  --muted: #bdd0f9;  
+  --strong: #005eff;  
 }
 
 @theme inline {
@@ -19,6 +20,7 @@
   --color-tertiary: var(--tertiary);
   --color-light: var(--light);
   --color-muted: var(--muted);
+  --color-strong: var(--strong);
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-space-grotesk);
@@ -37,3 +39,9 @@
     color: var(--primary);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+

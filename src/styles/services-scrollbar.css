@@ -1,0 +1,75 @@
+/* ===================================================== */
+/* SERVICES PAGE – PIXEL / GAME UI SCROLLBAR              */
+/* Scoped ONLY to .services-page                          */
+/* ===================================================== */
+
+/* ----------------------------- */
+/* Base scrollbar sizing         */
+/* ----------------------------- */
+.services-page ::-webkit-scrollbar {
+  height: 14px; /* horizontal scrollbar */
+}
+
+/* ----------------------------- */
+/* Track (background)            */
+/* ----------------------------- */
+.services-page ::-webkit-scrollbar-track {
+  background: transparent;
+  border-top: 2px solid var(--color-primary);
+}
+
+/* ----------------------------- */
+/* Thumb (pixel block style)     */
+/* ----------------------------- */
+.services-page ::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border: 2px solid #000;
+
+  /* Pixel-style stepped shadow */
+  box-shadow:
+    2px 2px 0 var(--color-primary-sat),
+    4px 4px 0 rgba(0, 0, 0, 0.45);
+
+  transition: background-color 120ms ease-out;
+}
+
+/* ----------------------------- */
+/* Hover state                   */
+/* ----------------------------- */
+.services-page ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary-sat);
+}
+
+/* ----------------------------- */
+/* Active / pressed (game feel)  */
+/* ----------------------------- */
+.services-page ::-webkit-scrollbar-thumb:active {
+  box-shadow:
+    1px 1px 0 var(--color-primary-sat),
+    2px 2px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* ----------------------------- */
+/* Firefox support               */
+/* ----------------------------- */
+.services-page {
+  scrollbar-width: auto;
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+/* ----------------------------- */
+/* Desktop enhancement           */
+/* ----------------------------- */
+@media (min-width: 768px) {
+  .services-page ::-webkit-scrollbar {
+    height: 16px;
+  }
+}
+
+/* ----------------------------- */
+/* Optional: snap polish         */
+/* Makes scrollbar feel smoother */
+/* ----------------------------- */
+.services-page .services-scroll {
+  scroll-behavior: smooth;
+}

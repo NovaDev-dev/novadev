@@ -10,19 +10,13 @@ import { IoClose } from "react-icons/io5";
 // Local Components
 import Logo from "../common/Logo"
 import { Button } from "../common/Button";
+// Data
+import { sections, SOCIALS } from "@/data/navbar";
 
 export default function Navbar() {
 
     // State Management
-    const [open, setOpen] = useState(true);
-
-    const sections = [
-        { id: "home", label: "home", href: "/" },
-        { id: "about", label: "about", href: "/#about" },
-        { id: "portfolio", label: "portfolio", href: "/#portfolio" },
-        { id: "services", label: "services", href: "/#services" },
-        { id: "contact", label: "contact", href: "/#contact" },
-    ];
+    const [open, setOpen] = useState(false);
 
     return (
         <nav className="fixed top-0 left-0 z-50 w-full py-8 px-24 flex items-center justify-center align-middle bg-primary text-white">
@@ -41,16 +35,22 @@ export default function Navbar() {
                 </li>
                 ))}
                 <li>
-                    <button className="p-2 transition-all duration-200 hover:opacity-80">
+                    <Link 
+                        href={SOCIALS["github"]}
+                        className="p-2 transition-all duration-200 hover:opacity-80">
                         <FiGithub size={24} />
-                    </button>
+                    </Link>
                 </li>
                 <li>
-                    <button className="p-2 transition-all duration-200 hover:opacity-80">
+                    <Link 
+                        href={SOCIALS["linkedin"]}
+                        className="p-2 transition-all duration-200 hover:opacity-80">
                         <FiLinkedin size={24} />
-                    </button>
+                    </Link>
                 </li>
-            <Button className="bg-secondary text-white">Get in Touch</Button> 
+            <Link href="/contact">
+                <Button className="bg-secondary text-white">Get in Touch</Button> 
+            </Link>
             </ul>
 
             {/* Mobile Hamburger */}
@@ -90,13 +90,19 @@ export default function Navbar() {
                     ))}
                 </ul>
                 <div className="flex flex-row space-x-4  py-6">
-                    <button className="p-2 transition-all duration-200 hover:opacity-80">
+                    <Link 
+                        href={SOCIALS["github"]}
+                        className="p-2 transition-all duration-200 hover:opacity-80">
                         <FiGithub size={24} />
-                    </button>
-                    <button className="p-2 transition-all duration-200 hover:opacity-80">
+                    </Link>
+                    <Link 
+                        href={SOCIALS["linkedin"]}
+                        className="p-2 transition-all duration-200 hover:opacity-80">
                         <FiLinkedin size={24} />
-                    </button>
-                    <Button className="bg-secondary text-white w-full">Get in Touch</Button>
+                    </Link>
+                    <Link href="/contact">
+                        <Button className="bg-secondary text-white w-full">Get in Touch</Button>                    
+                    </Link>
                 </div>
             </div>
         </nav>
