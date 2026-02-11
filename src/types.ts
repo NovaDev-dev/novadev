@@ -14,6 +14,7 @@ export interface ProjectData {
     details: string[],
     image: string,
     logo: string,
+    demo?: string,
     reverse?: boolean,
 };
 

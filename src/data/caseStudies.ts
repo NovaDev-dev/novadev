@@ -29,8 +29,43 @@ export const caseStudies : Record<string, CaseStudy> = {
         ],
     },
 
+    // 2. Así es Colombia
 
-    // 2. Campus Connect
+   "asi-es-colombia" : {
+        id: "asi-es-colombia",
+        title: "Así es Colombia",
+        summary: "This project is a responsive website for Así es Colombia, a local organization dedicated to sharing Colombian music and dance. The page introduces users to the group’s mission, rhythms, and cultural activities, and features a dynamic section displaying upcoming performances, making it easy for visitors to stay informed and engaged.",
+        sections: {
+            problem: {
+                heading: "Problem",
+                text: "Así es Colombia needed a modern and centralized online presence to showcase over 25 years of cultural trajectory. Their previous digital presence did not clearly communicate their mission, highlight traditional Colombian rhythms, or provide an easy way for visitors to discover upcoming performances and events."
+            },
+            solution: {
+                heading: "Solution",
+                text: "I designed and developed a responsive website that presents the organization’s history, mission, and cultural impact in a visually engaging way. The platform includes sections explaining Colombian folkloric rhythms, a gallery highlighting more than 25 years of performances, and a dynamic events section that keeps visitors updated on upcoming shows. The design focuses on vibrant visuals, clear storytelling, and intuitive navigation."
+            },
+            technologies: {
+                heading: "Technologies",
+                list: [
+                    "Next.js",
+                    "React",
+                    "Tailwind CSS",
+                    "TypeScript",
+                    "Vercel",
+                    "Git/GitHub"
+                ]
+            }
+        },
+        image: "/showcase/asi-es-colombia-1.gif",
+        links: [
+            { label: "Live Website", href: "https://asiescolombia.com/" },
+            { label: "GitHub", href: "https://github.com/NovaDev-dev/aec" },
+            { label: "Instagram Post", href: "https://www.instagram.com/p/DUi5ZbbCZ6g/" }
+        ],
+    },
+
+
+    // 3. Campus Connect
 
     "campus-connect" : {
         id: "campus-connect",

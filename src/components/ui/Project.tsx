@@ -40,7 +40,22 @@ export default function Project ({props, onClick}: ProjectProps) {
                     ))}
                 </ul>
     
-                <Button className="text-primary  border-primary" onClick={onClick}>View case study →</Button>
+                <div className="flex gap-4">
+                  <Button className="text-primary  border-primary" onClick={onClick}>View case study →</Button>
+                  {props.demo && (
+                    <Button className="bg-strong text-white">
+                      <a
+                        key={props.id}
+                        href={props.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=""
+                      >
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
+                </div>
             </div>
         </div>
     )

@@ -61,8 +61,8 @@ export default function Hero() {
             absolute
             bottom-0
             right-100
-            opacity-90
-            w-64
+            opacity-70
+            w-48
             pointer-events-none
             select-none
           "
