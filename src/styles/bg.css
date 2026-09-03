@@ -1,0 +1,11 @@
+.spacer {
+    width: 100%;
+    height: clamp(36px, 5vw, 90px);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('/bg/layer1.svg');
+}

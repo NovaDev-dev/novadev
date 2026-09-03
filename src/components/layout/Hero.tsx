@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
 
         <div className="my-6 flex flex-row gap-4 justify-center md:justify-start">
-            <a href="/contact">
+            <a href="/#contact">
               <Button className="bg-primary">Get Started</Button>
             </a>
 
@@ -39,34 +39,19 @@ export default function Hero() {
         {/* Optional highlights */}
         <div className="hidden md:flex flex-wrap gap-6 justify-center md:justify-start mb-12">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-primary rounded-full"></span>
+            <span className="w-2 h-2 bg-primary"></span>
             <span>Custom Web Apps</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-primary rounded-full"></span>
+            <span className="w-2 h-2 bg-primary"></span>
             <span>Mobile Applications</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-primary rounded-full"></span>
+            <span className="w-2 h-2 bg-primary"></span>
             <span>UI/UX Design</span>
           </div>
         </div>
       </div>
-      <img
-          src="/beaver.gif"
-          alt="Decorative animation"
-          className="
-            hidden lg:block
-            z-20
-            absolute
-            bottom-0
-            right-100
-            opacity-70
-            w-48
-            pointer-events-none
-            select-none
-          "
-        />
     </section>
   );
 }

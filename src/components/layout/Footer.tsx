@@ -2,11 +2,11 @@
 import { BsMailbox2Flag, BsTelephoneOutboundFill  } from "react-icons/bs";
 // Local Components
 import Logo from "../common/Logo";
-import { PixelButton } from "../common/Button";
+import { Button } from "../common/Button";
 
 export default function Footer() {
   return (
-    <section className="relative w-full h-96 overflow-hidden text-white font-display">
+    <section className="relative w-full h-96 overflow-hidden text-white font-display border-t-4 border-tertiary">
     {/* Background image */}
         <img
             src="/footer.png"
@@ -35,8 +35,8 @@ export default function Footer() {
                         
 
                     </div>
-                    <a className="ml-auto hidden md:block" href="/contact">
-                        <PixelButton className="bg-strong border-tertiary">GET STARTED</PixelButton>                    
+                    <a className="ml-auto hidden md:block" href="/#contact">
+                        <Button className="bg-strong">GET STARTED</Button>
                     </a>
                 </div>
                 <div>

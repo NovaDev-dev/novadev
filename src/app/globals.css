@@ -21,6 +21,7 @@
   --color-light: var(--light);
   --color-muted: var(--muted);
   --color-strong: var(--strong);
+  --color-primary-sat: var(--strong);
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-space-grotesk);

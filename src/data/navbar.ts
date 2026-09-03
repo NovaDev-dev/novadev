@@ -3,7 +3,7 @@ export const sections = [
     { id: "portfolio", label: "portfolio", href: "/#portfolio" },
     { id: "services", label: "services", href: "/#services" },
     { id: "testimonials", label: "testimonials", href: "/#testimonials" },
-    { id: "contact", label: "contact", href: "/contact" },
+    { id: "contact", label: "contact", href: "/#contact" },
 ];
 
 export const SOCIALS = {

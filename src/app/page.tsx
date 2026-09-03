@@ -4,6 +4,7 @@ import Hero from "@/components/layout/Hero";
 import Showcase from "@/components/layout/Showcase";
 import Services from "@/components/layout/Services";
 import Testimonials from "@/components/layout/Testimonials";
+import Contact from "@/components/layout/Contact";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Showcase/>
       <Services/>
       <Testimonials/>
+      <Contact/>
       <Footer/>
     </main>
   );

@@ -19,7 +19,7 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 z-50 w-full py-8 px-24 flex items-center justify-center align-middle bg-primary text-white">
+        <nav className="fixed top-0 left-0 z-50 w-full py-8 px-24 flex items-center justify-center align-middle bg-primary text-white border-b-4 border-tertiary">
             <Logo className="mr-24"/>
 
             {/* Desktop Menu */}
@@ -48,8 +48,8 @@ export default function Navbar() {
                         <FiLinkedin size={24} />
                     </Link>
                 </li>
-            <Link href="/contact">
-                <Button className="bg-secondary text-white">Get in Touch</Button> 
+            <Link href="/#contact">
+                <Button className="bg-secondary text-white">Get in Touch</Button>
             </Link>
             </ul>
 
@@ -100,8 +100,8 @@ export default function Navbar() {
                         className="p-2 transition-all duration-200 hover:opacity-80">
                         <FiLinkedin size={24} />
                     </Link>
-                    <Link href="/contact">
-                        <Button className="bg-secondary text-white w-full">Get in Touch</Button>                    
+                    <Link href="/#contact">
+                        <Button className="bg-secondary text-white w-full">Get in Touch</Button>
                     </Link>
                 </div>
             </div>
